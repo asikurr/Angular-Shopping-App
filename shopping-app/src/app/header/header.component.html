@@ -15,13 +15,16 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-            <a href="" class="dropdown-toggle nav-link" role="button">Manager<span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <a href="#" class="dropdown-toggle nav-link" 
+            role="button"
+            (click) = "isOpen = !isOpen"
+            >Manager<span class="caret"></span></a>
+            <ul class="dropdown-menu" [ngClass]="{show: isOpen}">
                 <li>
-                    <a href="">Save Data</a>
+                    <a class="dropdown-item" href="#">Save Data</a>
                 </li>
                 <li>
-                  <a href="">Fetch Data</a>
+                  <a class="dropdown-item" href="#">Fetch Data</a>
               </li>
             </ul>
         </li>

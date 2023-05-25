@@ -6,6 +6,7 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 export class HeaderComponent {
  @Output() featureSelect = new EventEmitter<string>();
+ isOpen = false;
     constructor() { }
 
     onSelect(feature : string){

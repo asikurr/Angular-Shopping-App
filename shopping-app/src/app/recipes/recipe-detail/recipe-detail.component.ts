@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 export class RecipeDetailComponent {
 
   @Input() recipe : Recipe;
+  isOpen = false;
 }
